@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF4XR - VR25 Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="icon" href="../assets/img/mixlab.png" type="image/x-icon">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body class="min-h-screen max-w-4xl mx-auto text-gray-700">
+    <main class="p-4 mx-auto text-center">
+        <!-- title -->
+        <h1 class="text-4xl pt-4">
+            A Practical Guide to <span class="font-bold">Radiance Fields for XR</span> Research and Applications
+        </h1>
+        <!-- venue -->
+        <h2 class="pt-2 text-lg">
+            <a class="text-sky-400 hover:text-sky-400/75" href="https://ieeevr.org/2025/program/tutorials/#T2" target="_blank">IEEE VR 2025</a> Tutorial on March 8, 2025, Vauban 1 
+        </h2>
+
+        <!-- team -->
+        <section id="team" class="grid grid-cols-3 gap-y-2 pt-6">
+            <figure class="flex flex-col group">
+                <div class="relative flex flex-col items-center">
+                    <img class="w-24 h-2w-24 sm:w-40 sm:h-40 rounded-full" src="smori_square.jpg" alt="shohei portrait">
+                    <div class="relative p-2">
+                        <figcaption class="text-center">
+                            <div class="text-lg sm:text-xl"><a class="text-sky-400 hover:text-sky-400/75" href="https://mugichoko445.github.io" target="_blank">Shohei Mori</a></div>
+                            <div class="text-sm text-gray-400">University of Stuttgart</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+            <figure class="flex flex-col group">
+                <div class="relative flex flex-col items-center">
+                    <img class="w-24 h-2w-24 sm:w-40 sm:h-40 rounded-full" src="ke_li.jpg" alt="ke portrait">
+                    <div class="relative p-2">
+                        <figcaption class="text-center">
+                            <div class="text-lg sm:text-xl"><a class="text-sky-400 hover:text-sky-400/75" href="https://keli95566.github.io/personal" target="_blank">Ke Li</a></div>
+                            <div class="text-sm text-gray-400">University of Hamburg</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+            <figure class="flex flex-col group">
+                <div class="relative flex flex-col items-center">
+                    <img class="w-24 h-2w-24 sm:w-40 sm:h-40 rounded-full" src="mana.png" alt="mana.png">
+                    <div class="relative p-2">
+                        <figcaption class="text-center">
+                            <div class="text-lg sm:text-xl"><a class="text-sky-400 hover:text-sky-400/75" href="https://llien30.github.io/" target="_blank">Mana Masuda</a></div>
+                            <div class="text-sm text-gray-400">Keio University</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+        </section>
+
+        <!--
+            aim
+        -->
+        <section id="aim" class="py-4 text-justify">
+            <div class="">
+                <p>
+                    The advent of photorealistic scene representations such as <span class="font-bold">Neural Radiance Fields (NeRF)</span> and <span class="font-bold">3D Gaussian Splattings (3DGS)</span> enable us to replicate complex real-world elements.
+                    This paradigm shift in graphics lets us revisit the way of capturing, storing, and replicating the real world and rethink what to bring in <span class="font-bold">XR</span> (X for any type).
+                </p>
+                <p class="pt-2">
+                    <span class="font-bold italic">This tutorial provides an opportunity for learning the basics to "start with" future XR research around the topic.</span>
+                    Namely, the attendees will learn the principles of view synthesis using machine learning technology and practical aspects of implementations using open-source projects.
+                    It also provides discussions and networking with VR attendees who share the same interests.
+                </p>
+                <p class="pt-2">
+                    The tutorial will begin with a general overview, summarizing the latest developments and current trends in radiance field research for XR applications.
+                    This will be followed by an in-depth, live demonstration and tutorial on creating basic NeRF and 3DGS scenes for VR using readily available open-source software such as <a class="text-gray-700 hover:text-gray-700/75" href="https://github.com/uhhhci/immersive-ngp" target="_blank">immersive-ngp <i class="fa fa-external-link" aria-hidden="true"></i></a> and <a class="text-gray-700 hover:text-gray-700/75" href="https://github.com/aras-p/UnityGaussianSplatting" target="_blank">UnityGaussianSplatting <i class="fa fa-external-link" aria-hidden="true"></i></a> toolkit.
+                    To conclude, we will summarize the key takeaways and facilitate an interactive discussion with the audience, exploring future trends and developments in radiance fields for XR.
+                </p>
+            </div>
+        </section>
+
+        
+        <!--
+            program
+        -->
+        <section id="program" class="py-12">
+            <div class="text-2xl font-bold pb-2 md:text-left text-center">
+                PROGRAM (Tentative)
+            </div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-left rtl:text-right">
+                    <tbody>
+                        <tr class="border-b border-gray-200 align-text-top">
+                            <th scope="row" class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap align-text-top">
+                                08:30 - 08:40
+                            </th>
+                            <td class="px-2 py-4">
+                                <h1 class="font-bold">Opening and Welcoming</h1>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 align-text-top">
+                            <th scope="row" class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap align-text-top">
+                                08:40 - 09:00
+                            </th>
+                            <td class="px-2 py-4">
+                                <h1 class="font-bold">Introduction to Radiance Fields for XR</h1>
+                                <p>
+                                    Shohei Mori presents NeRF and 3DGS and their surrounding fields, focusing at the current challenges of using these technologies in XR research.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 align-text-top">
+                            <th scope="row" class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                09:00 - 09:25
+                            </th>
+                            <td class="px-2 py-4">
+                                <h1 class="font-bold">Live Tutorial on NeRF for VR</h1>
+                                <p>
+                                    Ke Li presents <a class="text-sky-400 hover:text-sky-400/75" href="https://github.com/uhhhci/immersive-ngp" target="_blank">immersive-ngp <i class="fa fa-external-link" aria-hidden="true"></i></a>, showing how to get a NeRF model in Unity and VR.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 align-text-top">
+                            <th scope="row" class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                09:25 - 09:50
+                            </th>
+                            <td class="px-2 py-4">
+                                <h1 class="font-bold">Live Tutorial on 3DGS for VR</h1>
+                                <p>Mana Masuda presents <a class="text-sky-400 hover:text-sky-400/75" href="https://github.com/aras-p/UnityGaussianSplatting" target="_blank">UnityGaussianSplatting <i class="fa fa-external-link" aria-hidden="true"></i></a>, showing how to get 3DGS in Unity and VR.</p>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 align-text-top">
+                            <th scope="row" class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                09:50 - 10:00
+                            </th>
+                            <td class="px-2 py-4">
+                                <h1 class="font-bold">Future Challenges in XR</h1>
+                                <p>
+                                    Shohei Mori gives a summary and shares challenges for future XR research using NeRF and 3DGS.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 align-text-top">
+                            <th scope="row" class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                10:00 - 10:15
+                            </th>
+                            <td class="px-2 py-4">
+                                <h1 class="font-bold">Interactive Discussion</h1>
+                                <p>We welcome all attendees to an interactive discussion and exchange.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!--
+            acknowledgement
+        -->
+        <section id="acknowledgement" class="pt-4 text-justify text-sm text-gray-600">
+            <p><span class="font-medium">Acknowledgement</span> This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy – EXC 2120/1 – 390831618 and European Union’s Horizon Europe research and innovation program under grant agreement No 101135025, PRESENCE project.</p>
+        </section>
+    </main>
+
+    <footer id="footer" class="text-sm">
+        <div class="mx-2">
+            <section class="max-w-4xl mx-auto p-4 flex flex-row justify-between bg-slate-400 rounded-2xl">
+                <address>
+                    <h2><a href="https://mugichoko445.github.io/">Shohei MORI</a></h2>
+                    Allmandring 19,<br>
+                    70569 Stuttgart, Germany<br>
+                    Email: <a href="mailto:s.mori.jp@ieee.org">s.mori.jp [at] ieee.org</a>
+                </address>
+                <div class="flex flex-col justify-end">
+                    <p class="text-right">Copyright &copy; <span id="year"></span></p>
+                    <p class="text-right">All Rights Researved</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div class="h-4"><!-- spacer --></div>
+</body>
+
+</html>
