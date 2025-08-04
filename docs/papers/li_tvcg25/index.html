@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li+ TVCG 2025</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../assets/img/mixlab.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/fontawesome-free-6.5.1-web/css/all.min.css">
+	<link rel="stylesheet" href="../../assets/academicons-1.9.4/css/academicons.min.css">
+    <script src="../../js/projects.js" defer></script>
+</head>
+
+<body class="min-h-screen max-w-4xl mx-auto text-gray-700">
+    <main class="p-4 mx-auto text-center">
+        <!-- title -->
+        <h1 class="text-4xl pt-4">
+            <span class="font-bold">Radiance Fields in XR</span>: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research
+        </h1>
+        <!-- venue -->
+        <h2 class="pt-2 text-lg">
+            IEEE Transaction on Visualization and Computer Graphics (TVCG)<br>
+            Special Issue ISMAR 2025 <span class="font-bold">(To Appear)</span>
+        </h2>
+
+        <!-- resources -->
+        <section id="bio" class="max-w-4xl mx-auto text-sm py-4 space-x-2">
+            <a class="bg-gray-800 text-white rounded-full px-3 py-2 hover:opacity-90" href="#" target="_blank">
+                <i class="ai ai-ieee"></i> Xplore (TBA)
+            </a>
+            <a class="bg-gray-800 text-white rounded-full px-3 py-2 hover:opacity-90" href="#" target="_blank">
+                <i class="ai ai-arxiv"></i> arXiv (TBA)
+            </a>
+            <a class="bg-gray-800 text-white rounded-full px-3 py-2 hover:opacity-90" href="#" target="_blank">
+                <i class="fa fa-database"></i> Data (TBA)
+            </a>
+        </section>
+
+        <!-- authors -->
+        <section id="authors" class="grid grid-cols-4 gap-t-2 pt-6 max-w-2xl mx-auto">
+            <figure class="flex flex-col group">
+                <div class="relative flex flex-col items-center">
+                    <img class="w-20 h-20 sm:w-28 sm:h-28 rounded-full" src="ke_li.jpg" alt="ke portrait">
+                    <div class="relative pt-2 px-2">
+                        <figcaption class="text-center">
+                            <div class="text-base sm:text-lg"><a class="text-sky-400 hover:text-sky-400/75" href="https://keli95566.github.io/personal/" target="_blank">Ke Li</a></div>
+                            <div class="text-sm text-gray-400">University of Hamburg</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+            <figure class="flex flex-col group">
+                <div class="relative flex flex-col items-center">
+                    <img class="w-20 h-20 sm:w-28 sm:h-28 rounded-full" src="mana_masuda.jpg" alt="mana portrait">
+                    <div class="relative pt-2 px-2">
+                        <figcaption class="text-center">
+                            <div class="text-base sm:text-lg"><a class="text-sky-400 hover:text-sky-400/75" href="https://llien30.github.io/" target="_blank">Mana Masuda</a></div>
+                            <div class="text-sm text-gray-400">University of Stuttgart</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+            <figure class="flex flex-col group">
+                <div class="relative flex flex-col items-center">
+                    <img class="w-20 h-20 sm:w-28 sm:h-28 rounded-full" src="susanne_schmidt.jpg" alt="susanne portrait">
+                    <div class="relative pt-2 px-2">
+                        <figcaption class="text-center">
+                            <div class="text-base sm:text-lg"><a class="text-sky-400 hover:text-sky-400/75" href="https://profiles.canterbury.ac.nz/Susanne-Schmidt" target="_blank">Susanne Schmidt</a></div>
+                            <div class="text-sm text-gray-400">University of Canterbury</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+            <figure class="flex flex-col group">
+                <div class="relative flex flex-col items-center">
+                    <img class="w-20 h-20 sm:w-28 sm:h-28 rounded-full" src="shohei_mori.jpg" alt="shohei portrait">
+                    <div class="relative pt-2 px-2">
+                        <figcaption class="text-center">
+                            <div class="text-base sm:text-lg"><a class="text-sky-400 hover:text-sky-400/75" href="https://mugichoko445.github.io" target="_blank">Shohei Mori</a></div>
+                            <div class="text-sm text-gray-400">University of Stuttgart</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+        </section>
+
+        <!-- teaser -->
+        <figure class="pt-8 pb-4 md:px-10">
+            <img class="w-screen" src="li_tvcg25_teaser.jpg" alt="li_tvcg25_teaser.jpg" width="1153" height="388">
+            <figcaption class="text-justify pt-2 text-sm">
+                We observe a gap between the anticipated interests in RF-related technologies expected to advance new XR applications (left) and the actual interests that are considered the main factors in XR (right). This survey paper investigates and discusses how RF technologies, including NeRF and 3DGS, are envisioned for XR (i.e., <i class="fas fa-lightbulb"></i> XR-Envisioned) and how they are actually implemented for XR (i.e., <i class="fa-solid fa-clipboard-check"></i> XR-Addressed) in scientific papers from XR, HCI, CV, CG, Robotics, and MM communities via systematic review.
+            </figcaption>
+        </figure>
+
+        <!--
+            abstract
+        -->
+        <section id="abstract" class="py-4 text-justify">
+            <p><span class="font-bold">Abstract</span>
+                The development of radiance fields (RF), such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF), has revolutionized interactive photorealistic view synthesis and presents enormous opportunities for XR research and applications. However, despite the exponential growth of RF research, RF-related contributions to the XR community remain sparse. To better understand this research gap, we performed a systematic survey of current RF literature to analyze (i) how RF is envisioned for XR applications, (ii) how they have already been implemented, and (iii) the remaining research gaps. We collected \(365\) RF contributions related to XR from computer vision, computer graphics, robotics, multimedia, human-computer interaction, and XR communities, seeking to answer the above research questions. Among the \(365\) papers, we performed an analysis of \(66\) papers that already addressed a detailed aspect of RF research for XR. With this survey, we extended and positioned XR-specific RF research topics in the broader RF research field and provide a helpful resource for the XR community to navigate within the rapid development of RF research.
+            </p>
+        </section>
+        
+        <section id="bibtex" class="max-w-4xl mx-auto py-4 space-x-2 text-left">
+            <div class="mx-auto bg-gray-800 px-4 rounded-md shadow-lg relative">
+                <div class="flex justify-between items-center py-4 rounded-t-lg">
+                    <span class="text-xs font-semibold text-gray-400">BibTex</span>
+                    <button
+                        id="copyButton"
+                        class="text-xs font-semibold text-gray-400 btn-copy hover:text-gray-200"
+                        data-clipboard-target="#codeBlock"
+                        onclick="copyCodeToClipboard()">📋 Copy</button>
+                </div>
+                <pre class="text-sm text-white overflow-x-auto scrollbar-hide">
+<code id="codeBlock" class="block pb-4">@article{li_tvcg25,
+    author={Li, Ke and Masuda, Mana and Schmidt, Susanne and Mori, Shohei},
+    journal={IEEE Transactions on Visualization and Computer Graphics (TVCG)}, 
+    title={Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research}, 
+    volume={},
+    number={},
+    pages={},
+    year={2025}
+}</code></pre>
+            </div>
+        </section>
+
+        <!--
+            acknowledgement
+        -->
+        <section id="acknowledgement" class="pt-4 text-justify text-sm text-gray-600">
+            <p><span class="font-medium">Acknowledgement</span>
+                This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy – EXC 2120/1 – 390831618, the European Union’s Horizon Europe research and innovation program under grant agreement No 101135025, PRESENCE project, and the MSCA Staff Exchanges project PLACES (grant agreement No 101086206). Early drafts of this submission were rephrased for clarity and grammatical correctness using OpenAI's GPT-4o model and Microsoft Copilot.
+            </p>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+        fetch("../../footer.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("footer").innerHTML = html;
+                // Wait for footer to load, then update the year
+                document.getElementById('year').innerHTML = new Date().getFullYear();
+            });
+    </script>
+    
+    <script>
+        function copyCodeToClipboard() {
+        const copyText = document.getElementById('codeBlock').innerText;
+        const textArea = document.createElement('textarea');
+        textArea.value = copyText;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+    
+        const copyButton = document.getElementById('copyButton');
+        copyButton.textContent = '✅ Copied!';
+        setTimeout(function () {
+            copyButton.textContent = '📋 Copy';
+        }, 2000);
+        }
+    </script>
+    
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</body>
+
+</html>
