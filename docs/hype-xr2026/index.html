@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hype-XR 2026</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.5.1-web/css/all.min.css">
+	<link rel="stylesheet" href="../assets/academicons-1.9.4/css/academicons.min.css">
+    <script src="../js/main.js" defer></script>
+    <link rel="icon" href="hype-xr_logo.png" type="image/x-icon">
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-white text-justify">
+    <header class="dark:text-white sticky top-2 z-10 mx-2">
+        <section class="bg-slate-500/50 dark:bg-slate-700/50 backdrop-blur-sm max-w-4xl mx-auto p-4 flex justify-between items-center rounded-2xl">
+            <div class="flex items-center">
+                <div class="bg-black rounded-full mr-2"><a href="index.html"><img class="w-6 h-6" src="hype-xr_logo.png"></div>
+                <h1 class="font-medium"><a href="index.html"><span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-700 via-purple-500 to-pink-500">Hype-XR</span> 2026</a>
+            </div>
+            <div class="mr-2">
+                <buttom id="hamburger-button" class="md:hidden cursor-pointer relative w-8 h-8">
+                    &#9776;
+                </buttom>
+                <nav class="hidden font-sans md:block space-x-8" aria-label="main">
+                    <a href="index.html" class="hover:opacity-90">Home</a>
+                    <a href="#contribute" class="hover:opacity-90">Contribute</a>
+                    <a href="#program" class="hover:opacity-90">Program</a>
+                    <a href="#organizers" class="hover:opacity-90">Organizers</a>
+                    <button id="theme-button" class="hover:opacity-90 cursor-pointer text-black dark:text-white">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </button>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu" class="fixed hidden inset-0 backdrop-blur-sm justify-center items-start top-20 text-xl animate-open-menu origin-top">
+            <nav class="flex flex-col p-4 w-full mx-2 bg-slate-100 dark:bg-slate-900 border border-gray-700 dark:border-white font-medium rounded-xl" aria-label="mobile">
+                <a href="index.html" class="pb-2 hover:opacity-90">Home</a>
+                <a href="#contribute" class="pb-2 underline hover:opacity-90">Contribute</a>
+                <a href="#program" class="pb-2 underline hover:opacity-90">Program</a>
+                <div class="flex justify-between items-center hover:opacity-90">
+                    <a href="#organizers">Organizers</a>
+                    <button id="theme-button" class="hover:opacity-90 cursor-pointer text-black dark:text-white ">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </button>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+
+    <main class="max-w-4xl mx-auto mb-8">
+        <section id="hero" class="flex flex-col px-4 py-32">
+            <div>
+                <h1 class="text-5xl text-left font-extrabold select-none">
+                    Workshop on
+                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-700 via-purple-500 to-pink-500">Hyperrealism in XR</span> 2026
+                    <span class="font-normal itali text-slate-400">in the era of Radiance Fields</span>
+                </h1>
+                <p class="my-4 select-none">
+                    Co-located with IEEE VR 2026, Daegu, Korea – March XX, 2026
+                </p>
+            </div>
+        </section>
+
+        
+<section id="hero" class="flex flex-col px-4 py-32 bg-[url('./hype-xr_img.png')] bg-cover bg-center">
+    <div>
+        <h1 class="text-5xl text-left font-extrabold select-none">
+            Workshop on
+            <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-700 via-purple-500 to-pink-500">
+                Hyperrealism in XR
+            </span> 2026
+            <span class="font-normal italic text-slate-400">
+                in the era of Radiance Fields
+            </span>
+        </h1>
+        <p class="my-4 select-none">
+            Co-located with IEEE VR 2026, Daegu, Korea – March XX, 2026
+        </p>
+    </div>
+</section>
+
+
+
+        
+        <!--
+            Descriptions
+        -->
+        <section id="description" class="p-4">
+            <h1 class="text-2xl font-bold md:text-left text-center">
+                Description
+            </h1>
+            <div class="text-sm gap-t-2 pt-6">
+                <p class="pb-2">
+                    Recent advances in computer vision, computer graphics, and generative artificial intelligence (AI),
+                    particularly techniques based on 3D Gaussian Splatting (3DGS) [1] and Neural Radiance Fields (NeRF) [2],
+                    have made the creation and authoring of photorealistic 3D assets more accessible than ever before.
+                    While technical challenges remain, the XR ("X" for any kind of reality) community should not focus solely on reconstruction/generation accuracy or processing speed  [3].
+                    Instead, our attention must shift toward the human factors that shape how realism from these assets is perceived, interpreted, and experienced.</p>
+                <p>
+                    The Workshop on <span class="font-bold">Hyperrealism in XR (Hype-XR)</span> builds upon progress in reality capture, rendering, and generated realities
+                    (e.g. 3D world generation models such as <a href="https://marble.worldlabs.ai/worlds" target="_blank">World Lab Marble</a>),
+                    yet goes beyond them to confront the epistemological and experiential challenges that arise when bringing captured and generated reality into XR.
+                    Our goal is not merely to reproduce the real world through real-time reconstruction and rendering, but to build upon these capabilities and ask deeper questions:
+                    When, how, for what purpose, and why should we bring photorealistic assets into XR? Or, more simply, does higher fidelity always equal better XR? And more importantly,
+                    what are the underlying ethical concerns we need to address as the line between virtual and physical realities becomes increasingly blurred?</p>
+            </div>
+            <div class="text-sm gap-t-2 pt-2 text-slate-400">
+                <p><span class="font-semibold">References</span></p>
+                <ul>
+                    <li>[1] B. Kerbl, et al., "3D Gaussian Splatting for Real-time Radiance Field Rendering," ACM TOG, 42:1--14, 2023.</li>
+                    <li>[2] B. Mildenhall, et al., "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis," Proc. ECCV, 2020.</li>
+                    <li>[3] K. Li, et al., "Radiance fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research," IEEE TVCG, 2025.</li>
+                </ul>
+            </div>
+            
+            <div class="text-sm gap-t-2 pt-2">
+                <p>
+                    <span class="font-bold">Topics:</span> Hype-XR is exploratory in nature. We welcome contributions from any domain that discusses (hyper)realism in XR—including reality capture,
+                    processing, rendering, display, generation, and perception of captured reality, as well as conceptual framing of related challenges.
+                    Accordingly, the workshop will revisit major topics in IEEE VR under the theme of hyperrealism, but is not limited to the following areas:
+                </p>
+                <ul class="list-disc pl-5 pt-2">
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Foundations of hyperrealism for XR:</span> Definitions, terminologies, evaluation metrics, and standardization.
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Reality capture for XR:</span> Camera systems, streaming, and volumetography (or reality capture best practices and guidance).
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Rendering and visual hyperrealism for XR:</span> Radiance fields (or 3D Gaussian splatting and neural radiance fields), high-performance rendering,
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Displays for hyperrealism for XR:</span> High-performance 3D displays.
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Multisensory and cross-modal hyperrealism:</span> Audio, haptics, smell, taste, and their pseudo sensations.
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Hyperrealism for machines:</span> Photorealistic datasets, simulation environments, and domain shift problems.
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Behavioral hyperrealism:</span> Animations, gaze, motion synthesis, and uncanny valley mitigation of virtual humans.
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Human Cognition and perception aspects of experiencing hyperrealism:</span> Conviction of reality, presence, embodiment, and plausibility.
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Ethics and accessibility:</span> Ethics concerns, inclusivity, deception issues, and psychological safety in hyperrealistic XR experiences.
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Applications:</span> Simulation, training, art, digital archives, and entertainment.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!--
+            Contribute
+        -->
+        <section id="contribute" class="p-4">
+            <h1 class="text-2xl font-bold md:text-left text-center">
+                Contribute
+            </h1>
+            <div class="font-normal text-sm gap-t-2 pt-6">
+                <p>
+                    Each deadline is 23:59:59 AoE (Anywhere on Earth) == GMT/UTC-12:00 on the stated day, no matter where the submitter is located.
+                </p>
+                <ul class="list-disc pl-5 pt-2">
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Short Paper Submission:</span> January 7, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Notification:</span> January 18, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Camera-ready Submission of Short Paper:</span> January 25, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Research Pitch Talk Proposal Submission:</span> February 9, 2026
+                    </li>
+                </ul>
+            </div>
+            <div class="font-normal text-sm gap-t-2 pt-6">
+                <span class="font-bold">Submission site (EasyChair):</span> TBA
+            </div>
+        </section>
+
+        <!--
+            Program
+        -->
+        <section id="program" class="p-4">
+            <h1 class="text-2xl font-bold md:text-left text-center">
+                Program (TBA)
+            </h1>
+            <div class="font-normal text-sm gap-t-2 pt-6">
+            </div>
+        </section>
+        
+        <!--
+            Organizers
+        -->
+        <section id="organizers" class="p-4">
+            <h1 class="text-2xl font-bold md:text-left text-center">
+                Organizers
+            </div>
+            <div class="grid grid-cols-4 gap-t-2 pt-6 font-normal">
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="shohei_mori.jpg" alt="shohei portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg"><a href="https://mugichoko445.github.io" target="_blank">Shohei Mori</a></div>
+                                <div class="text-sm text-gray-400">University of Stuttgart, Germany</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="ke_li.jpg" alt="ke portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg"><a href="https://keli95566.github.io/personal/" target="_blank">Ke Li</a></div>
+                                <div class="text-sm text-gray-400">University of Hamburg, Germany</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="mana_masuda.jpg" alt="mana portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg"><a href="https://llien30.github.io/" target="_blank">Mana Masuda</a></div>
+                                <div class="text-sm text-gray-400">SB Intuitions, Japan</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="susanne_schmidt.jpg" alt="susanne portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg"><a href="https://profiles.canterbury.ac.nz/Susanne-Schmidt" target="_blank">Susanne Schmidt</a></div>
+                                <div class="text-sm text-gray-400">University of Canterbury, New Zealand</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+        
+        <!--
+            Program Committee
+        -->
+        <section id="pc" class="p-4">
+            <h1 class="text-2xl font-bold">
+                Program Committee (TBA)
+            </h1>
+            <!--
+            <div class="grid grid-cols-2 gap-y-2 lg:m-0 m-2 pt-4 font-normal">
+                <figure class="flex px-2 group">
+                    <div class="relative flex items-center">
+                        <img class="w-20 h-20 rounded-full dark:invert" src="na.png" alt="na.png">
+                        <div class="relative p-2 text-left">
+                            <figcaption>
+                                <div class="text-base">Xiaodan Hu</div>
+                                <div class="text-sm text-gray-400">Graz University of Technology, Austria</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            -->
+        </section>
+    </main>
+
+    
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+        fetch("../footer.html")
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("footer").innerHTML = html;
+                // Wait for footer to load, then update the year
+                document.getElementById('year').innerHTML = new Date().getFullYear();
+            });
+    </script>
+</body>
+
+</html>
