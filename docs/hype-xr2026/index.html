@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hype-XR 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../assets/fontawesome-free-6.5.1-web/css/all.min.css">
 	<link rel="stylesheet" href="../assets/academicons-1.9.4/css/academicons.min.css">
@@ -11,23 +14,23 @@
     <link rel="icon" href="hype-xr_logo.png" type="image/x-icon">
 </head>
 
-<body class="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-white text-justify">
+<body class="min-h-screen bg-slate-50 dark:bg-[#05080f] text-slate-950 dark:text-slate-200 text-justify">
     <header class="dark:text-white sticky top-2 z-10 mx-2">
-        <section class="bg-slate-500/50 dark:bg-slate-700/50 backdrop-blur-sm max-w-4xl mx-auto p-4 flex justify-between items-center rounded-2xl">
+        <section class="bg-slate-500/50 dark:bg-slate-800/60 dark:border dark:border-slate-700/60 backdrop-blur-sm max-w-4xl mx-auto p-4 flex justify-between items-center rounded-2xl font-mono">
             <div class="flex items-center">
                 <div class="bg-black rounded-full mr-2"><a href="index.html"><img class="w-6 h-6" src="hype-xr_logo.png"></div>
-                <h1 class="font-medium"><a href="index.html"><span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-700 via-purple-500 to-pink-500">Hype-XR</span> 2026</a>
+                <h1 class="font-bold"><a href="index.html"><span class="text-sky-400">Hype-XR</span> 2026</a>
             </div>
             <div class="mr-2">
                 <buttom id="hamburger-button" class="md:hidden cursor-pointer relative w-8 h-8">
                     &#9776;
                 </buttom>
-                <nav class="hidden font-sans md:block space-x-8" aria-label="main">
-                    <a href="index.html" class="hover:opacity-90">Home</a>
-                    <a href="#contribute" class="hover:opacity-90">Contribute</a>
-                    <a href="#keynote" class="hover:opacity-90">Keynote</a>
-                    <a href="#program" class="hover:opacity-90">Program</a>
-                    <a href="#organizers" class="hover:opacity-90">Organizers</a>
+                <nav class="hidden md:block space-x-8 text-sm" aria-label="main">
+                    <a href="index.html" class="hover:text-sky-400 transition-colors">Home</a>
+                    <a href="#contribute" class="hover:text-sky-400 transition-colors">Contribute</a>
+                    <a href="#keynote" class="hover:text-sky-400 transition-colors">Keynote</a>
+                    <a href="#program" class="hover:text-sky-400 transition-colors">Program</a>
+                    <a href="#organizers" class="hover:text-sky-400 transition-colors">Organizers</a>
                     <button id="theme-button" class="hover:opacity-90 cursor-pointer text-black dark:text-white">
                         <i class="fa-solid fa-circle-half-stroke"></i>
                     </button>
@@ -35,7 +38,7 @@
             </div>
         </section>
         <section id="mobile-menu" class="fixed hidden inset-0 backdrop-blur-sm justify-center items-start top-20 text-xl animate-open-menu origin-top">
-            <nav class="flex flex-col p-4 w-full mx-2 bg-slate-100 dark:bg-slate-900 border border-gray-700 dark:border-white font-medium rounded-xl" aria-label="mobile">
+            <nav class="flex flex-col p-4 w-full mx-2 bg-slate-100 dark:bg-slate-900 border border-gray-700 dark:border-white font-mono rounded-xl" aria-label="mobile">
                 <a href="index.html" class="pb-2 hover:opacity-90">Home</a>
                 <a href="#contribute" class="pb-2 underline hover:opacity-90">Contribute</a>
                 <a href="#keynote" class="pb-2 underline hover:opacity-90">Keynote</a>
@@ -52,16 +55,23 @@
 
 
     <main class="max-w-4xl mx-auto mb-8">
-        <section id="hero" class="flex flex-col px-4 pt-32 pb-12">
-            <div>
-                <h1 class="text-5xl text-left font-extrabold select-none">
-                    1st Workshop on
-                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-700 via-purple-500 to-pink-500">Hyperrealism in XR</span>
-                    <span class="font-normal itali text-slate-400">in the era of Radiance Fields</span>
-                </h1>
-                <p class="my-4 select-none">
-                    Co-located with IEEE ISMAR 2026, Bari, Italy – October 5 or 6, 2026 · Hybrid · Half-day
-                </p>
+        <section id="hero" class="flex flex-col px-4 pt-32 pb-12 text-left">
+            <p class="font-mono text-xs sm:text-sm uppercase tracking-[0.35em] text-sky-400 mb-5 select-none">Call for Papers</p>
+            <h1 class="font-mono text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-none select-none dark:text-white">
+                Hyperrealism in XR
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-500 dark:text-slate-400 mt-5 select-none">
+                1st Workshop · <span class="italic">in the Era of Radiance Fields</span>
+            </p>
+            <p class="font-mono text-xs sm:text-sm uppercase tracking-widest text-slate-500 mt-6 select-none">
+                Co-located with IEEE ISMAR 2026
+            </p>
+            <div class="font-mono text-xs sm:text-sm mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-slate-600 dark:text-slate-300 select-none">
+                <span><i class="fa-solid fa-location-dot text-sky-400 mr-1.5"></i>Bari, Italy</span>
+                <span class="text-slate-400 dark:text-slate-600">·</span>
+                <span><i class="fa-regular fa-calendar text-sky-400 mr-1.5"></i>October 5 or 6, 2026</span>
+                <span class="text-slate-400 dark:text-slate-600">·</span>
+                <span><i class="fa-solid fa-desktop text-sky-400 mr-1.5"></i>Hybrid · Half-day</span>
             </div>
         </section>
         
@@ -69,18 +79,19 @@
             Descriptions
         -->
         <section id="description" class="p-4">
-            <h1 class="text-2xl font-bold md:text-left text-center">
-                Description
-            </h1>
+            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+                <span class="whitespace-nowrap">Description</span>
+                <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
+            </h2>
             <div class="text-sm gap-t-2 pt-6">
                 <p class="pb-2">
                     Recent advances in radiance-field rendering — 3D Gaussian Splatting (3DGS) [1] and Neural Radiance Fields (NeRF) [2] —
-                    together with generative 3D world models (e.g. <a href="https://marble.worldlabs.ai/worlds" target="_blank">World Labs Marble</a>),
+                    together with generative 3D world models (e.g. <a href="https://marble.worldlabs.ai/worlds" target="_blank" class="text-sky-600 dark:text-sky-400 hover:underline">World Labs Marble</a>),
                     have made photorealistic captured and synthesized 3D content broadly accessible. As photorealism becomes a commodity rather than a technical
                     milestone, the XR community faces a new question: which aspects of realism actually matter for human experience? [3]</p>
                 <p>
                     The <span class="font-bold">1st Workshop on Hyperrealism in XR (Hype-XR)</span> focuses on this shift from <span class="font-semibold">asset-level realism</span>
-                    to <span class="font-semibold">perception-level realism</span>. Unlike VR, mixed and augmented reality (MR/AR) places virtual content directly
+                    to <span class="font-semibold text-sky-600 dark:text-sky-400">perception-level realism</span>. Unlike VR, mixed and augmented reality (MR/AR) places virtual content directly
                     alongside the physical world, making coherence with the real scene — not just per-pixel fidelity — the central challenge. We ask: when, how, for
                     what purpose, and why should we bring photorealistic assets into MR/AR, and how should we evaluate the result? And what ethical concerns arise as
                     the line between virtual and physical realities blurs?</p>
@@ -100,18 +111,18 @@
                     position or application papers that examine how realism should be defined, evaluated, and deployed once photorealistic scans are no longer the
                     bottleneck. Topics include, but are not limited to:
                 </p>
-                <ul class="list-disc pl-5 pt-2">
+                <ul class="list-disc pl-5 pt-2 marker:text-sky-500 dark:marker:text-sky-400">
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Perception of hyperrealism in MR/AR:</span> presence, plausibility, conviction of reality, the uncanny, and perceptual artifacts in mixed scenes.
+                        <span class="font-semibold text-sky-700 dark:text-sky-300">Perception of hyperrealism in MR/AR:</span> presence, plausibility, conviction of reality, the uncanny, and perceptual artifacts in mixed scenes.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Evaluation and standardization:</span> moving beyond PSNR / SSIM / LPIPS toward perceptual and task-based metrics, benchmarks, and datasets for XR.
+                        <span class="font-semibold text-sky-700 dark:text-sky-300">Evaluation and standardization:</span> moving beyond PSNR / SSIM / LPIPS toward perceptual and task-based metrics, benchmarks, and datasets for XR.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Critical and ethical perspectives:</span> does higher fidelity equal better MR/AR? deception risks, privacy of captured scenes, and psychological safety.
+                        <span class="font-semibold text-sky-700 dark:text-sky-300">Critical and ethical perspectives:</span> does higher fidelity equal better MR/AR? deception risks, privacy of captured scenes, and psychological safety.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Capture, rendering, generation, and editing:</span> radiance fields (3DGS, NeRF) and generative 3D, real-time rendering and streaming on HMDs, relighting, and authoring workflows.
+                        <span class="font-semibold text-sky-700 dark:text-sky-300">Capture, rendering, generation, and editing:</span> radiance fields (3DGS, NeRF) and generative 3D, real-time rendering and streaming on HMDs, relighting, and authoring workflows.
                     </li>
                 </ul>
             </div>
@@ -121,22 +132,23 @@
             Contribute
         -->
         <section id="contribute" class="p-4">
-            <h1 class="text-2xl font-bold md:text-left text-center">
-                Contribute
-            </h1>
+            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+                <span class="whitespace-nowrap">Contribute</span>
+                <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
+            </h2>
             <div class="font-normal text-sm gap-t-2 pt-6">
                 <p>
                     We invite contributions through two tracks. All submissions are encouraged to engage the workshop's framing question —
                     <span class="italic">when, how, for what purpose, and why should we bring photorealistic assets into MR/AR?</span>
                 </p>
-                <ul class="list-disc pl-5 pt-2">
+                <ul class="list-disc pl-5 pt-2 marker:text-sky-500 dark:marker:text-sky-400">
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Short papers (archival):</span> Original research, surveys, demos, or position papers, up to 6 pages excluding references,
+                        <span class="font-semibold text-sky-700 dark:text-sky-300">Short papers (archival):</span> Original research, surveys, demos, or position papers, up to 6 pages excluding references,
                         in the IEEE Computer Society VGTC conference format. Anonymous submissions undergo formal review (two reviews per paper, plus a rebuttal).
                         Accepted papers appear in the ISMAR 2026 Adjunct Proceedings on IEEE Xplore.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Research pitches (non-archival):</span> Extended abstracts (1–2 pages) for 3-minute lightning talks on work in progress.
+                        <span class="font-semibold text-sky-700 dark:text-sky-300">Research pitches (non-archival):</span> Extended abstracts (1–2 pages) for 3-minute lightning talks on work in progress.
                         Lightly reviewed by the organizers; not published on IEEE Xplore. Strongly encouraged for early-stage academic and industry contributions.
                     </li>
                 </ul>
@@ -146,30 +158,30 @@
                     <span class="font-bold">Important dates</span> (provisional, aligned with the ISMAR 2026 workshop track). All deadlines are 23:59:59 AoE
                     (Anywhere on Earth, UTC−12) on the stated day.
                 </p>
-                <ul class="list-disc pl-5 pt-2">
+                <ul class="list-disc pl-5 pt-2 marker:text-sky-500 dark:marker:text-sky-400">
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Short paper submission:</span> July 5, 2026
+                        <span class="font-semibold">Short paper submission:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">July 5, 2026</span>
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Notification of acceptance:</span> July 17, 2026
+                        <span class="font-semibold">Notification of acceptance:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">July 17, 2026</span>
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Camera-ready materials:</span> July 31, 2026
+                        <span class="font-semibold">Camera-ready materials:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">July 31, 2026</span>
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Research-pitch abstract submission:</span> September 4, 2026
+                        <span class="font-semibold">Research-pitch abstract submission:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">September 4, 2026</span>
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Research-pitch notification:</span> September 18, 2026
+                        <span class="font-semibold">Research-pitch notification:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">September 18, 2026</span>
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Workshop:</span> October 5 or 6, 2026 (Bari, Italy / hybrid)
+                        <span class="font-semibold">Workshop:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">October 5 or 6, 2026</span> (Bari, Italy / hybrid)
                     </li>
                 </ul>
             </div>
-            <div class="font-normal text-sm gap-t-2 pt-6">
-                <p><span class="font-bold">Submission site:</span> link coming soon.</p>
-                <p class="pt-1"><span class="font-bold">Contact:</span> <a href="mailto:hype-xr2026@googlegroups.com" class="underline">hype-xr2026@googlegroups.com</a></p>
+            <div class="font-normal text-sm gap-t-2 pt-6 flex flex-col sm:flex-row sm:items-center gap-3">
+                <span class="font-mono text-xs uppercase tracking-widest border border-sky-500/50 dark:border-sky-400/50 text-sky-600 dark:text-sky-400 rounded-md px-3 py-1.5 select-none">Submit · link coming soon</span>
+                <p><span class="font-bold">Contact:</span> <a href="mailto:hype-xr2026@googlegroups.com" class="font-mono text-sky-600 dark:text-sky-400 hover:underline">hype-xr2026@googlegroups.com</a></p>
             </div>
         </section>
 
@@ -177,16 +189,17 @@
             Keynote
         -->
         <section id="keynote" class="p-4">
-            <h1 class="text-2xl font-bold md:text-left text-center">
-                Keynote Speaker
-            </h1>
+            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+                <span class="whitespace-nowrap">Keynote Speaker</span>
+                <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
+            </h2>
             <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 pt-6">
                 <img class="w-32 h-32 rounded-full object-cover shrink-0" src="kirsten_dickhaut.jpg" alt="Kirsten Dickhaut portrait">
                 <div class="text-sm">
-                    <div class="text-lg font-semibold">Prof. Kirsten Dickhaut</div>
-                    <div class="text-gray-400 pb-2">University of Stuttgart, Germany</div>
+                    <div class="text-lg font-bold text-sky-600 dark:text-sky-400">Prof. Kirsten Dickhaut</div>
+                    <div class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 pb-3 pt-0.5">University of Stuttgart, Germany</div>
                     <p class="pb-2">
-                        <span class="font-semibold">Tentative talk:</span> Hyperrealism from the perspective of historical artifacts and literature
+                        <span class="font-semibold">Tentative talk:</span> <span class="italic">Hyperrealism from the perspective of historical artifacts and literature</span>
                     </p>
                     <p>
                         Prof. Dickhaut will open the workshop with a cross-disciplinary perspective on how realism is perceived and contextualized,
@@ -200,15 +213,16 @@
             Program
         -->
         <section id="program" class="p-4">
-            <h1 class="text-2xl font-bold md:text-left text-center">
-                Program
-            </h1>
+            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+                <span class="whitespace-nowrap">Program</span>
+                <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
+            </h2>
             <div class="font-normal text-sm gap-t-2 pt-6">
                 <p class="pb-2">
                     Hype-XR is a half-day, hybrid workshop. We deliberately move away from a "mini-conference" format — roughly half the time is
                     reserved for interactive activity rather than paper presentations. Indicative agenda (subject to change):
                 </p>
-                <ul class="list-disc pl-5 pt-2">
+                <ul class="list-disc pl-5 pt-2 marker:text-sky-500 dark:marker:text-sky-400">
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
                         <span class="font-semibold">Welcome and framing</span> (10 min)
                     </li>
@@ -241,17 +255,18 @@
             Organizers
         -->
         <section id="organizers" class="p-4">
-            <h1 class="text-2xl font-bold md:text-left text-center">
-                Organizers
-            </h1>
-            <div class="grid grid-cols-4 gap-t-2 pt-6 font-normal">
+            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+                <span class="whitespace-nowrap">Organizers</span>
+                <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-2 pt-6 font-normal">
                 <figure class="flex flex-col group">
                     <div class="relative flex flex-col items-center">
                         <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="shohei_mori.jpg" alt="shohei portrait">
                         <div class="relative pt-2 px-2">
                             <figcaption class="text-center">
-                                <div class="text-base sm:text-lg"><a href="https://mugichoko445.github.io" target="_blank">Shohei Mori</a></div>
-                                <div class="text-sm text-gray-400">University of Stuttgart, Germany</div>
+                                <div class="text-base sm:text-lg font-bold hover:text-sky-500 dark:hover:text-sky-400 transition-colors"><a href="https://mugichoko445.github.io" target="_blank">Shohei Mori</a></div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">University of Stuttgart, Germany</div>
                             </figcaption>
                         </div>
                     </div>
@@ -261,8 +276,8 @@
                         <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="ke_li.jpg" alt="ke portrait">
                         <div class="relative pt-2 px-2">
                             <figcaption class="text-center">
-                                <div class="text-base sm:text-lg"><a href="https://keli95566.github.io/personal/" target="_blank">Ke Li</a></div>
-                                <div class="text-sm text-gray-400">University of Hamburg, Germany</div>
+                                <div class="text-base sm:text-lg font-bold hover:text-sky-500 dark:hover:text-sky-400 transition-colors"><a href="https://keli95566.github.io/personal/" target="_blank">Ke Li</a></div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">University of Hamburg, Germany</div>
                             </figcaption>
                         </div>
                     </div>
@@ -272,8 +287,8 @@
                         <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="mana_masuda.jpg" alt="mana portrait">
                         <div class="relative pt-2 px-2">
                             <figcaption class="text-center">
-                                <div class="text-base sm:text-lg"><a href="https://llien30.github.io/" target="_blank">Mana Masuda</a></div>
-                                <div class="text-sm text-gray-400">SB Intuitions, Japan</div>
+                                <div class="text-base sm:text-lg font-bold hover:text-sky-500 dark:hover:text-sky-400 transition-colors"><a href="https://llien30.github.io/" target="_blank">Mana Masuda</a></div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">SB Intuitions, Japan</div>
                             </figcaption>
                         </div>
                     </div>
@@ -283,8 +298,8 @@
                         <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full" src="susanne_schmidt.jpg" alt="susanne portrait">
                         <div class="relative pt-2 px-2">
                             <figcaption class="text-center">
-                                <div class="text-base sm:text-lg"><a href="https://profiles.canterbury.ac.nz/Susanne-Schmidt" target="_blank">Susanne Schmidt</a></div>
-                                <div class="text-sm text-gray-400">University of Canterbury, New Zealand</div>
+                                <div class="text-base sm:text-lg font-bold hover:text-sky-500 dark:hover:text-sky-400 transition-colors"><a href="https://profiles.canterbury.ac.nz/Susanne-Schmidt" target="_blank">Susanne Schmidt</a></div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">University of Canterbury, New Zealand</div>
                             </figcaption>
                         </div>
                     </div>
@@ -296,53 +311,54 @@
             Program Committee
         -->
         <section id="pc" class="p-4">
-            <h1 class="text-2xl font-bold md:text-left text-center">
-                Program Committee
-            </h1>
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 pt-6 text-sm">
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Alexander Achberger</div>
-                    <div class="text-gray-400">University of Stuttgart, Germany</div>
+            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+                <span class="whitespace-nowrap">Program Committee</span>
+                <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-6 text-sm">
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Alexander Achberger</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">University of Stuttgart, Germany</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Christoph Ebner</div>
-                    <div class="text-gray-400">TU Graz, Austria</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Christoph Ebner</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">TU Graz, Austria</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Yutaro Hirao</div>
-                    <div class="text-gray-400">Cluster Inc., Japan</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Yutaro Hirao</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Cluster Inc., Japan</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Xiaodan Hu</div>
-                    <div class="text-gray-400">Shibaura Institute of Technology, Japan</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Xiaodan Hu</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Shibaura Institute of Technology, Japan</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Shuqi Liao</div>
-                    <div class="text-gray-400">Purdue University, USA</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Shuqi Liao</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Purdue University, USA</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Miki Matsumuro</div>
-                    <div class="text-gray-400">Honda Research Institute, Japan</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Miki Matsumuro</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Honda Research Institute, Japan</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Peter Mohr-Ziak</div>
-                    <div class="text-gray-400">TU Graz, Austria</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Peter Mohr-Ziak</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">TU Graz, Austria</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Marie Morita</div>
-                    <div class="text-gray-400">Osaka Institute of Technology, Japan</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Marie Morita</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Osaka Institute of Technology, Japan</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Fumihiko Nakamura</div>
-                    <div class="text-gray-400">Ritsumeikan University, Japan</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Fumihiko Nakamura</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Ritsumeikan University, Japan</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Lucchas Ribeiro Skreinig</div>
-                    <div class="text-gray-400">TU Graz, Austria</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Lucchas Ribeiro Skreinig</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">TU Graz, Austria</div>
                 </div>
-                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <div class="font-semibold">Ana Stanescu</div>
-                    <div class="text-gray-400">TU Graz, Austria</div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Ana Stanescu</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">TU Graz, Austria</div>
                 </div>
             </div>
         </section>

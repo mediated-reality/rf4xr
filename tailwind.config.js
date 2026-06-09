@@ -4,6 +4,10 @@ module.exports = {
   content: ['./docs/**/*.{html,js}'],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ['"Space Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        serif: ['Spectral', 'Georgia', 'serif'],
+      },
       keyframes: {
         'open-menu': {
           '0%': { transform: 'scaleY(0.99)' },
