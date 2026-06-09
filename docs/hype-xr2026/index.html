@@ -25,6 +25,7 @@
                 <nav class="hidden font-sans md:block space-x-8" aria-label="main">
                     <a href="index.html" class="hover:opacity-90">Home</a>
                     <a href="#contribute" class="hover:opacity-90">Contribute</a>
+                    <a href="#keynote" class="hover:opacity-90">Keynote</a>
                     <a href="#program" class="hover:opacity-90">Program</a>
                     <a href="#organizers" class="hover:opacity-90">Organizers</a>
                     <button id="theme-button" class="hover:opacity-90 cursor-pointer text-black dark:text-white">
@@ -37,6 +38,7 @@
             <nav class="flex flex-col p-4 w-full mx-2 bg-slate-100 dark:bg-slate-900 border border-gray-700 dark:border-white font-medium rounded-xl" aria-label="mobile">
                 <a href="index.html" class="pb-2 hover:opacity-90">Home</a>
                 <a href="#contribute" class="pb-2 underline hover:opacity-90">Contribute</a>
+                <a href="#keynote" class="pb-2 underline hover:opacity-90">Keynote</a>
                 <a href="#program" class="pb-2 underline hover:opacity-90">Program</a>
                 <div class="flex justify-between items-center hover:opacity-90">
                     <a href="#organizers">Organizers</a>
@@ -50,15 +52,15 @@
 
 
     <main class="max-w-4xl mx-auto mb-8">
-        <section id="hero" class="flex flex-col px-4 py-32">
+        <section id="hero" class="flex flex-col px-4 pt-32 pb-12">
             <div>
                 <h1 class="text-5xl text-left font-extrabold select-none">
-                    Workshop on
-                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-700 via-purple-500 to-pink-500">Hyperrealism in XR</span> 2026
+                    1st Workshop on
+                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-700 via-purple-500 to-pink-500">Hyperrealism in XR</span>
                     <span class="font-normal itali text-slate-400">in the era of Radiance Fields</span>
                 </h1>
                 <p class="my-4 select-none">
-                    Co-located with IEEE VR 2026, Daegu, Korea – March XX, 2026
+                    Co-located with IEEE ISMAR 2026, Bari, Italy – October 5 or 6, 2026 · Hybrid · Half-day
                 </p>
             </div>
         </section>
@@ -72,18 +74,16 @@
             </h1>
             <div class="text-sm gap-t-2 pt-6">
                 <p class="pb-2">
-                    Recent advances in computer vision, computer graphics, and generative artificial intelligence (AI),
-                    particularly techniques based on 3D Gaussian Splatting (3DGS) [1] and Neural Radiance Fields (NeRF) [2],
-                    have made the creation and authoring of photorealistic 3D assets more accessible than ever before.
-                    While technical challenges remain, the XR ("X" for any kind of reality) community should not focus solely on reconstruction/generation accuracy or processing speed  [3].
-                    Instead, our attention must shift toward the human factors that shape how realism from these assets is perceived, interpreted, and experienced.</p>
+                    Recent advances in radiance-field rendering — 3D Gaussian Splatting (3DGS) [1] and Neural Radiance Fields (NeRF) [2] —
+                    together with generative 3D world models (e.g. <a href="https://marble.worldlabs.ai/worlds" target="_blank">World Labs Marble</a>),
+                    have made photorealistic captured and synthesized 3D content broadly accessible. As photorealism becomes a commodity rather than a technical
+                    milestone, the XR community faces a new question: which aspects of realism actually matter for human experience? [3]</p>
                 <p>
-                    The Workshop on <span class="font-bold">Hyperrealism in XR (Hype-XR)</span> builds upon progress in reality capture, rendering, and generated realities
-                    (e.g. 3D world generation models such as <a href="https://marble.worldlabs.ai/worlds" target="_blank">World Lab Marble</a>),
-                    yet goes beyond them to confront the epistemological and experiential challenges that arise when bringing captured and generated reality into XR.
-                    Our goal is not merely to reproduce the real world through real-time reconstruction and rendering, but to build upon these capabilities and ask deeper questions:
-                    When, how, for what purpose, and why should we bring photorealistic assets into XR? Or, more simply, does higher fidelity always equal better XR? And more importantly,
-                    what are the underlying ethical concerns we need to address as the line between virtual and physical realities becomes increasingly blurred?</p>
+                    The <span class="font-bold">1st Workshop on Hyperrealism in XR (Hype-XR)</span> focuses on this shift from <span class="font-semibold">asset-level realism</span>
+                    to <span class="font-semibold">perception-level realism</span>. Unlike VR, mixed and augmented reality (MR/AR) places virtual content directly
+                    alongside the physical world, making coherence with the real scene — not just per-pixel fidelity — the central challenge. We ask: when, how, for
+                    what purpose, and why should we bring photorealistic assets into MR/AR, and how should we evaluate the result? And what ethical concerns arise as
+                    the line between virtual and physical realities blurs?</p>
             </div>
             <div class="text-sm gap-t-2 pt-2 text-slate-400">
                 <p><span class="font-semibold">References</span></p>
@@ -96,40 +96,22 @@
             
             <div class="text-sm gap-t-2 pt-2">
                 <p>
-                    <span class="font-bold">Topics:</span> Hype-XR is exploratory in nature. We welcome contributions from any domain that discusses (hyper)realism in XR—including reality capture,
-                    processing, rendering, display, generation, and perception of captured reality, as well as conceptual framing of related challenges.
-                    Accordingly, the workshop will revisit major topics in IEEE VR under the theme of hyperrealism, but is not limited to the following areas:
+                    <span class="font-bold">Topics:</span> We invite technical papers that develop methods for controllable, perceptually meaningful realism, and
+                    position or application papers that examine how realism should be defined, evaluated, and deployed once photorealistic scans are no longer the
+                    bottleneck. Topics include, but are not limited to:
                 </p>
                 <ul class="list-disc pl-5 pt-2">
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Foundations of hyperrealism for XR:</span> Definitions, terminologies, evaluation metrics, and standardization.
+                        <span class="font-semibold">Perception of hyperrealism in MR/AR:</span> presence, plausibility, conviction of reality, the uncanny, and perceptual artifacts in mixed scenes.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Reality capture for XR:</span> Camera systems, streaming, and volumetography (or reality capture best practices and guidance).
+                        <span class="font-semibold">Evaluation and standardization:</span> moving beyond PSNR / SSIM / LPIPS toward perceptual and task-based metrics, benchmarks, and datasets for XR.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Rendering and visual hyperrealism for XR:</span> Radiance fields (or 3D Gaussian splatting and neural radiance fields), high-performance rendering,
+                        <span class="font-semibold">Critical and ethical perspectives:</span> does higher fidelity equal better MR/AR? deception risks, privacy of captured scenes, and psychological safety.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Displays for hyperrealism for XR:</span> High-performance 3D displays.
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Multisensory and cross-modal hyperrealism:</span> Audio, haptics, smell, taste, and their pseudo sensations.
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Hyperrealism for machines:</span> Photorealistic datasets, simulation environments, and domain shift problems.
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Behavioral hyperrealism:</span> Animations, gaze, motion synthesis, and uncanny valley mitigation of virtual humans.
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Human Cognition and perception aspects of experiencing hyperrealism:</span> Conviction of reality, presence, embodiment, and plausibility.
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Ethics and accessibility:</span> Ethics concerns, inclusivity, deception issues, and psychological safety in hyperrealistic XR experiences.
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Applications:</span> Simulation, training, art, digital archives, and entertainment.
+                        <span class="font-semibold">Capture, rendering, generation, and editing:</span> radiance fields (3DGS, NeRF) and generative 3D, real-time rendering and streaming on HMDs, relighting, and authoring workflows.
                     </li>
                 </ul>
             </div>
@@ -144,25 +126,73 @@
             </h1>
             <div class="font-normal text-sm gap-t-2 pt-6">
                 <p>
-                    Each deadline is 23:59:59 AoE (Anywhere on Earth) == GMT/UTC-12:00 on the stated day, no matter where the submitter is located.
+                    We invite contributions through two tracks. All submissions are encouraged to engage the workshop's framing question —
+                    <span class="italic">when, how, for what purpose, and why should we bring photorealistic assets into MR/AR?</span>
                 </p>
                 <ul class="list-disc pl-5 pt-2">
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Short Paper Submission:</span> January 7, 2026
+                        <span class="font-semibold">Short papers (archival):</span> Original research, surveys, demos, or position papers, up to 6 pages excluding references,
+                        in the IEEE Computer Society VGTC conference format. Anonymous submissions undergo formal review (two reviews per paper, plus a rebuttal).
+                        Accepted papers appear in the ISMAR 2026 Adjunct Proceedings on IEEE Xplore.
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Notification:</span> January 18, 2026
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Camera-ready Submission of Short Paper:</span> January 25, 2026
-                    </li>
-                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Research Pitch Talk Proposal Submission:</span> February 9, 2026
+                        <span class="font-semibold">Research pitches (non-archival):</span> Extended abstracts (1–2 pages) for 3-minute lightning talks on work in progress.
+                        Lightly reviewed by the organizers; not published on IEEE Xplore. Strongly encouraged for early-stage academic and industry contributions.
                     </li>
                 </ul>
             </div>
             <div class="font-normal text-sm gap-t-2 pt-6">
-                <span class="font-bold">Submission site (EasyChair):</span> TBA
+                <p class="pb-2">
+                    <span class="font-bold">Important dates</span> (provisional, aligned with the ISMAR 2026 workshop track). All deadlines are 23:59:59 AoE
+                    (Anywhere on Earth, UTC−12) on the stated day.
+                </p>
+                <ul class="list-disc pl-5 pt-2">
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Short paper submission:</span> July 5, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Notification of acceptance:</span> July 17, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Camera-ready materials:</span> July 31, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Research-pitch abstract submission:</span> September 4, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Research-pitch notification:</span> September 18, 2026
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Workshop:</span> October 5 or 6, 2026 (Bari, Italy / hybrid)
+                    </li>
+                </ul>
+            </div>
+            <div class="font-normal text-sm gap-t-2 pt-6">
+                <p><span class="font-bold">Submission site:</span> link coming soon.</p>
+                <p class="pt-1"><span class="font-bold">Contact:</span> <a href="mailto:hype-xr2026@googlegroups.com" class="underline">hype-xr2026@googlegroups.com</a></p>
+            </div>
+        </section>
+
+        <!--
+            Keynote
+        -->
+        <section id="keynote" class="p-4">
+            <h1 class="text-2xl font-bold md:text-left text-center">
+                Keynote Speaker
+            </h1>
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 pt-6">
+                <img class="w-32 h-32 rounded-full object-cover shrink-0" src="kirsten_dickhaut.jpg" alt="Kirsten Dickhaut portrait">
+                <div class="text-sm">
+                    <div class="text-lg font-semibold">Prof. Kirsten Dickhaut</div>
+                    <div class="text-gray-400 pb-2">University of Stuttgart, Germany</div>
+                    <p class="pb-2">
+                        <span class="font-semibold">Tentative talk:</span> Hyperrealism from the perspective of historical artifacts and literature
+                    </p>
+                    <p>
+                        Prof. Dickhaut will open the workshop with a cross-disciplinary perspective on how realism is perceived and contextualized,
+                        framing Hype-XR's central question of perception-level realism in XR.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -171,9 +201,39 @@
         -->
         <section id="program" class="p-4">
             <h1 class="text-2xl font-bold md:text-left text-center">
-                Program (TBA)
+                Program
             </h1>
             <div class="font-normal text-sm gap-t-2 pt-6">
+                <p class="pb-2">
+                    Hype-XR is a half-day, hybrid workshop. We deliberately move away from a "mini-conference" format — roughly half the time is
+                    reserved for interactive activity rather than paper presentations. Indicative agenda (subject to change):
+                </p>
+                <ul class="list-disc pl-5 pt-2">
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Welcome and framing</span> (10 min)
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Keynote</span> (45 min)
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Short paper session</span> — 4 papers × 15 min (60 min)
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Captured-reality demo + coffee break</span> — bring radiance-field captures and run them on attendees' headsets (30 min)
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Research-pitch lightning talks</span> (20 min)
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Structured pro/contra breakouts</span> (30 min)
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Closing panel</span> — "Does higher fidelity always mean better MR/AR?" (35 min)
+                    </li>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Wrap-up and next steps</span> (10 min)
+                    </li>
+                </ul>
             </div>
         </section>
         
@@ -183,7 +243,7 @@
         <section id="organizers" class="p-4">
             <h1 class="text-2xl font-bold md:text-left text-center">
                 Organizers
-            </div>
+            </h1>
             <div class="grid grid-cols-4 gap-t-2 pt-6 font-normal">
                 <figure class="flex flex-col group">
                     <div class="relative flex flex-col items-center">
@@ -236,24 +296,55 @@
             Program Committee
         -->
         <section id="pc" class="p-4">
-            <h1 class="text-2xl font-bold">
-                Program Committee (TBA)
+            <h1 class="text-2xl font-bold md:text-left text-center">
+                Program Committee
             </h1>
-            <!--
-            <div class="grid grid-cols-2 gap-y-2 lg:m-0 m-2 pt-4 font-normal">
-                <figure class="flex px-2 group">
-                    <div class="relative flex items-center">
-                        <img class="w-20 h-20 rounded-full dark:invert" src="na.png" alt="na.png">
-                        <div class="relative p-2 text-left">
-                            <figcaption>
-                                <div class="text-base">Xiaodan Hu</div>
-                                <div class="text-sm text-gray-400">Graz University of Technology, Austria</div>
-                            </figcaption>
-                        </div>
-                    </div>
-                </figure>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 pt-6 text-sm">
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Alexander Achberger</div>
+                    <div class="text-gray-400">University of Stuttgart, Germany</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Christoph Ebner</div>
+                    <div class="text-gray-400">TU Graz, Austria</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Yutaro Hirao</div>
+                    <div class="text-gray-400">Cluster Inc., Japan</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Xiaodan Hu</div>
+                    <div class="text-gray-400">Shibaura Institute of Technology, Japan</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Shuqi Liao</div>
+                    <div class="text-gray-400">Purdue University, USA</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Miki Matsumuro</div>
+                    <div class="text-gray-400">Honda Research Institute, Japan</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Peter Mohr-Ziak</div>
+                    <div class="text-gray-400">TU Graz, Austria</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Marie Morita</div>
+                    <div class="text-gray-400">Osaka Institute of Technology, Japan</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Fumihiko Nakamura</div>
+                    <div class="text-gray-400">Ritsumeikan University, Japan</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Lucchas Ribeiro Skreinig</div>
+                    <div class="text-gray-400">TU Graz, Austria</div>
+                </div>
+                <div class="border border-slate-200 dark:border-slate-700 rounded-lg p-3 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <div class="font-semibold">Ana Stanescu</div>
+                    <div class="text-gray-400">TU Graz, Austria</div>
+                </div>
             </div>
-            -->
         </section>
     </main>
 
