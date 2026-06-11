@@ -15,8 +15,8 @@
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-[#05080f] text-slate-950 dark:text-slate-200 text-justify">
-    <header class="dark:text-white sticky top-2 z-10 mx-2">
-        <section class="bg-slate-500/50 dark:bg-slate-800/60 dark:border dark:border-slate-700/60 backdrop-blur-sm max-w-4xl mx-auto p-4 flex justify-between items-center rounded-2xl font-mono">
+    <header class="dark:text-white sticky top-4 lg:top-6 z-10 mx-2">
+        <section class="bg-slate-500/20 dark:bg-slate-800/60 dark:border dark:border-slate-700/60 backdrop-blur-sm max-w-4xl mx-auto p-4 flex justify-between items-center rounded-full font-mono">
             <div class="flex items-center">
                 <div class="bg-black rounded-full mr-2"><a href="index.html"><img class="w-6 h-6" src="hype-xr_logo.png"></div>
                 <h1 class="font-bold"><a href="index.html"><span class="text-sky-400">Hype-XR</span> 2026</a>
@@ -40,9 +40,9 @@
         <section id="mobile-menu" class="fixed hidden inset-0 backdrop-blur-sm justify-center items-start top-20 text-xl animate-open-menu origin-top">
             <nav class="flex flex-col p-4 w-full mx-2 bg-slate-100 dark:bg-slate-900 border border-gray-700 dark:border-white font-mono rounded-xl" aria-label="mobile">
                 <a href="index.html" class="pb-2 hover:opacity-90">Home</a>
-                <a href="#contribute" class="pb-2 underline hover:opacity-90">Contribute</a>
-                <a href="#keynote" class="pb-2 underline hover:opacity-90">Keynote</a>
-                <a href="#program" class="pb-2 underline hover:opacity-90">Program</a>
+                <a href="#contribute" class="pb-2 hover:opacity-90">Contribute</a>
+                <a href="#keynote" class="pb-2 hover:opacity-90">Keynote</a>
+                <a href="#program" class="pb-2 hover:opacity-90">Program</a>
                 <div class="flex justify-between items-center hover:opacity-90">
                     <a href="#organizers">Organizers</a>
                     <button id="theme-button" class="hover:opacity-90 cursor-pointer text-black dark:text-white ">
@@ -55,31 +55,58 @@
 
 
     <main class="max-w-4xl mx-auto mb-8">
-        <section id="hero" class="flex flex-col px-4 pt-32 pb-12 text-left">
-            <p class="font-mono text-xs sm:text-sm uppercase tracking-[0.35em] text-sky-400 mb-5 select-none">Call for Papers</p>
-            <h1 class="font-mono text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-none select-none dark:text-white">
-                Hyperrealism in XR
-            </h1>
-            <p class="text-xl sm:text-2xl text-slate-500 dark:text-slate-400 mt-5 select-none">
-                1st Workshop · <span class="italic">in the Era of Radiance Fields</span>
-            </p>
-            <p class="font-mono text-xs sm:text-sm uppercase tracking-widest text-slate-500 mt-6 select-none">
-                Co-located with IEEE ISMAR 2026
-            </p>
-            <div class="font-mono text-xs sm:text-sm mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-slate-600 dark:text-slate-300 select-none">
-                <span><i class="fa-solid fa-location-dot text-sky-400 mr-1.5"></i>Bari, Italy</span>
-                <span class="text-slate-400 dark:text-slate-600">·</span>
-                <span><i class="fa-regular fa-calendar text-sky-400 mr-1.5"></i>October 5 or 6, 2026</span>
-                <span class="text-slate-400 dark:text-slate-600">·</span>
-                <span><i class="fa-solid fa-desktop text-sky-400 mr-1.5"></i>Hybrid · Half-day</span>
+        <section id="hero" class="px-4 pt-32 pb-12 text-left flex flex-col gap-6">
+            <!-- Row 1: Image + First three lines -->
+            <div class="grid grid-cols-3 lg:grid-cols-4 gap-4 items-center">
+                <!-- Image column with light/dark mode control -->
+                <div class="col-span-1 flex justify-center lg:justify-start">
+                    <div class="relative w-full">
+                        <!-- Blurred halo -->
+                        <div class="absolute inset-0 rounded-full blur-xl dark:bg-white/30"></div>
+
+                        <!-- White-background image (only in light mode) -->
+                        <img src="hype-xr_img_white.png" alt="Hype XR Logo" class="relative w-full h-auto object-cover rounded-full select-none block dark:hidden"/>
+                        <!-- Dark-background image (only in dark mode) -->
+                        <img src="hype-xr_img.png" alt="Hype XR Logo" class="relative w-full h-auto object-cover rounded-full select-none hidden dark:block"/>
+                    </div>
+                </div>
+
+                <!-- Text column -->
+                <div class="col-span-2 lg:col-span-3 min-w-0">
+                    <p class="text-xl sm:text-2xl text-slate-500 dark:text-slate-400 select-none">
+                        1st Workshop on
+                    </p>
+                    <h1 class="font-mono text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-tight select-none dark:text-white">
+                        Hyperrealism in XR
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-slate-500 dark:text-slate-400 select-none">
+                        <span class="italic">in the Era of Radiance Fields</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Row 2: Everything else (full width) -->
+            <div>
+                <p class="font-mono text-sm uppercase tracking-widest text-slate-500 select-none">
+                    Co-located with IEEE ISMAR 2026
+                </p>
+
+                <div class="font-mono text-sm mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-slate-600 dark:text-slate-300 select-none">
+                    <span><i class="fa-solid fa-location-dot text-sky-400 mr-1.5"></i>Bari, Italy</span>
+                    <span class="text-slate-400 dark:text-slate-600">·</span>
+                    <span><i class="fa-regular fa-calendar text-sky-400 mr-1.5"></i>October 5 or 6, 2026</span>
+                    <span class="text-slate-400 dark:text-slate-600">·</span>
+                    <span><i class="fa-solid fa-desktop text-sky-400 mr-1.5"></i>Hybrid · Half-day</span>
+                </div>
             </div>
         </section>
+    
         
         <!--
             Descriptions
         -->
         <section id="description" class="p-4">
-            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+            <h2 class="flex items-center gap-3 font-mono text-lg font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
                 <span class="whitespace-nowrap">Description</span>
                 <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
             </h2>
@@ -132,7 +159,7 @@
             Contribute
         -->
         <section id="contribute" class="p-4">
-            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+            <h2 class="flex items-center gap-3 font-mono text-lg font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
                 <span class="whitespace-nowrap">Contribute</span>
                 <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
             </h2>
@@ -189,7 +216,7 @@
             Keynote
         -->
         <section id="keynote" class="p-4">
-            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+            <h2 class="flex items-center gap-3 font-mono text-lg font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
                 <span class="whitespace-nowrap">Keynote Speaker</span>
                 <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
             </h2>
@@ -213,7 +240,7 @@
             Program
         -->
         <section id="program" class="p-4">
-            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+            <h2 class="flex items-center gap-3 font-mono text-lg font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
                 <span class="whitespace-nowrap">Program</span>
                 <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
             </h2>
@@ -255,7 +282,7 @@
             Organizers
         -->
         <section id="organizers" class="p-4">
-            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+            <h2 class="flex items-center gap-3 font-mono text-lg font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
                 <span class="whitespace-nowrap">Organizers</span>
                 <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
             </h2>
@@ -311,7 +338,7 @@
             Program Committee
         -->
         <section id="pc" class="p-4">
-            <h2 class="flex items-center gap-3 font-mono text-sm font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+            <h2 class="flex items-center gap-3 font-mono text-lg font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
                 <span class="whitespace-nowrap">Program Committee</span>
                 <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
             </h2>
@@ -329,8 +356,16 @@
                     <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Cluster Inc., Japan</div>
                 </div>
                 <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Takeshi Kurata</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">AIST, Japan</div>
+                </div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
                     <div class="text-sm font-bold">Xiaodan Hu</div>
                     <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">Shibaura Institute of Technology, Japan</div>
+                </div>
+                <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                    <div class="text-sm font-bold">Ryosuke Ichikari</div>
+                    <div class="text-[0.7rem] uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">AIST, Japan</div>
                 </div>
                 <div class="border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
                     <div class="text-sm font-bold">Shuqi Liao</div>
@@ -366,16 +401,21 @@
 
     
     <!-- footer -->
-    <div id="footer"></div>
-    <script>
-        fetch("../footer.html")
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById("footer").innerHTML = html;
-                // Wait for footer to load, then update the year
-                document.getElementById('year').innerHTML = new Date().getFullYear();
-            });
-    </script>
+    <footer id="footer" class="dark:text-white text-sm">
+        <div class="mx-2">
+            <section class="max-w-4xl mx-auto p-4 flex flex-row justify-between bg-slate-500/50 dark:bg-slate-900 rounded-2xl">
+                <address>
+                    <h2><a href="https://mediated-reality.github.io">Hype-XR 2026 Organizers</a></h2>
+                    Email: <a href="mailto:hype-xr2026@googlegroups.com">hype-xr2026@googlegroups.com</a>
+                </address>
+                <div class="flex flex-col justify-end">
+                    <p class="text-right">Copyright &copy; <span id="year"></span></p>
+                    <p class="text-right">All Rights Reserved</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div class="h-4"><!-- spacer --></div>
 </body>
 
 </html>
