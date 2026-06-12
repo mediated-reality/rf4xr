@@ -15,6 +15,7 @@
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-[#05080f] text-slate-950 dark:text-slate-200 text-justify">
+    <canvas id="particle-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;" aria-hidden="true"></canvas>
     <header class="dark:text-white sticky top-4 lg:top-6 z-10 mx-2">
         <section class="bg-slate-500/20 dark:bg-slate-800/60 dark:border dark:border-slate-700/60 backdrop-blur-sm max-w-4xl mx-auto p-4 flex justify-between items-center rounded-full font-mono">
             <div class="flex items-center">
@@ -416,6 +417,102 @@
         </section>
     </footer>
     <div class="h-4"><!-- spacer --></div>
+
+    <script>
+    (function () {
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+
+        const COUNT = 1000;
+        const REPEL_RADIUS = 130;
+        const REPEL_FORCE = 0.55;
+        const MAX_SPEED = 1.4;
+        const DAMPING = 0.97;
+
+        let W, H, particles;
+        const mouse = { x: -9999, y: -9999 };
+
+        function resize() {
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+        }
+
+        function mkParticle() {
+            return {
+                x: Math.random() * W,
+                y: Math.random() * H,
+                vx: (Math.random() - 0.5) * 0.5,
+                vy: (Math.random() - 0.5) * 0.5,
+                r: Math.random() * 1.8 + 0.4,
+                base: Math.random() * 0.25 + 0.08,
+            };
+        }
+
+        function init() {
+            resize();
+            particles = Array.from({ length: COUNT }, mkParticle);
+        }
+
+        function tick() {
+            const isDark = document.documentElement.classList.contains('dark');
+
+            ctx.clearRect(0, 0, W, H);
+
+            for (const p of particles) {
+                const dx = p.x - mouse.x;
+                const dy = p.y - mouse.y;
+                const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+
+                if (dist < REPEL_RADIUS) {
+                    const f = ((REPEL_RADIUS - dist) / REPEL_RADIUS) * REPEL_FORCE;
+                    p.vx += (dx / dist) * f;
+                    p.vy += (dy / dist) * f;
+                }
+
+                const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+                if (speed > MAX_SPEED) {
+                    p.vx = (p.vx / speed) * MAX_SPEED;
+                    p.vy = (p.vy / speed) * MAX_SPEED;
+                }
+
+                p.vx *= DAMPING;
+                p.vy *= DAMPING;
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0) p.x = W;
+                else if (p.x > W) p.x = 0;
+                if (p.y < 0) p.y = H;
+                else if (p.y > H) p.y = 0;
+
+                const color = isDark
+                    ? `rgba(255,255,255,${p.base})`
+                    : `rgba(100,116,139,${p.base * 0.6})`;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+
+            requestAnimationFrame(tick);
+        }
+
+        window.addEventListener('resize', () => {
+            resize();
+            for (const p of particles) {
+                p.x = Math.min(p.x, W);
+                p.y = Math.min(p.y, H);
+            }
+        });
+
+        window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+        window.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+
+        init();
+        tick();
+    })();
+    </script>
 </body>
 
 </html>
