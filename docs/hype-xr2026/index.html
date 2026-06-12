@@ -423,7 +423,7 @@
         const canvas = document.getElementById('particle-canvas');
         const ctx = canvas.getContext('2d');
 
-        const COUNT = 1000;
+        const COUNT = window.innerWidth < 640 ? 300 : 1000;
         const REPEL_RADIUS = 130;
         const REPEL_FORCE = 0.55;
         const MAX_SPEED = 1.4;
