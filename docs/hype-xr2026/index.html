@@ -32,6 +32,7 @@
                     <a href="#keynote" class="hover:text-sky-400 transition-colors">Keynote</a>
                     <a href="#papers" class="hover:text-sky-400 transition-colors">Papers</a>
                     <a href="#program" class="hover:text-sky-400 transition-colors">Program</a>
+                    <a href="#panelists" class="hover:text-sky-400 transition-colors">Panel</a>
                     <a href="#organizers" class="hover:text-sky-400 transition-colors">Organizers</a>
                     <button id="theme-button" class="hover:opacity-90 cursor-pointer text-black dark:text-white">
                         <i class="fa-solid fa-circle-half-stroke"></i>
@@ -46,6 +47,7 @@
                 <a href="#keynote" class="pb-2 hover:opacity-90">Keynote</a>
                 <a href="#papers" class="pb-2 hover:opacity-90">Papers</a>
                 <a href="#program" class="pb-2 hover:opacity-90">Program</a>
+                <a href="#panelists" class="pb-2 hover:opacity-90">Panel</a>
                 <div class="flex justify-between items-center hover:opacity-90">
                     <a href="#organizers">Organizers</a>
                     <button id="theme-button" class="hover:opacity-90 cursor-pointer text-black dark:text-white ">
@@ -198,11 +200,11 @@
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
                         <span class="font-semibold">Camera-ready materials:</span> <span class="font-semibold text-slate-400 dark:text-slate-500 line-through">July 31, 2026</span> <span class="font-mono text-xs uppercase tracking-wider text-slate-400 dark:text-slate-500">(closed)</span>
                     </li>
-                    <li class="marker:text-sky-500 dark:marker:text-sky-400 rounded-md px-1">
-                        <span class="font-semibold">Research-pitch abstract submission:</span> <span class="font-semibold text-white dark:text-slate-900 bg-sky-600 dark:bg-sky-400 rounded px-1.5 py-0.5">September 4, 2026</span>
+                    <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
+                        <span class="font-semibold">Research-pitch abstract submission:</span> <span class="font-semibold text-slate-400 dark:text-slate-500 line-through">September 4, 2026</span> <span class="font-mono text-xs uppercase tracking-wider text-slate-400 dark:text-slate-500">(closed)</span>
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Research-pitch notification:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">September 18, 2026</span>
+                        <span class="font-semibold">Research-pitch notification:</span> <span class="font-semibold text-slate-400 dark:text-slate-500 line-through">September 18, 2026</span> <span class="font-mono text-xs uppercase tracking-wider text-slate-400 dark:text-slate-500">(sent — <a href="#papers" class="text-sky-600 dark:text-sky-400 hover:underline">see accepted pitches</a>)</span>
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
                         <span class="font-semibold">Workshop:</span> <span class="font-semibold text-sky-600 dark:text-sky-400">October 6 (Tue) 2026, Afternoon Session</span> (Bari, Italy / hybrid)
@@ -247,10 +249,6 @@
                 <span class="whitespace-nowrap">Accepted Papers</span>
                 <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
             </h2>
-            <div class="font-normal text-sm gap-t-2 pt-6">
-                <p class="pb-2">
-                </p>
-            </div>
             <ol class="flex flex-col gap-3 pt-4">
                 <li class="flex gap-3 text-left border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
                     <span class="font-mono text-xs text-sky-500 dark:text-sky-400 pt-0.5 select-none shrink-0">01</span>
@@ -288,11 +286,25 @@
                     </div>
                 </li>
             </ol>
-            <div class="font-normal text-sm gap-t-2 pt-4 text-slate-500 dark:text-slate-400">
-                <p>
-                    The <span class="font-semibold">research-pitch track (non-archival)</span> remains open — extended abstracts are due
-                    <span class="font-semibold text-sky-600 dark:text-sky-400">September 4, 2026</span>.
-                </p>
+
+            <div class="mt-0">
+                <h3 class="font-mono text-sm font-bold uppercase tracking-[0.15em] text-sky-600 dark:text-sky-400 py-4">Accepted Research Pitches</h3>
+                <ol class="flex flex-col gap-3">
+                    <li class="flex gap-3 text-left border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                        <span class="font-mono text-xs text-sky-500 dark:text-sky-400 pt-0.5 select-none shrink-0">P1</span>
+                        <div>
+                            <div class="text-sm font-bold">In Space, No One Will Hear You Fall: Microgravity Bouldering via 3D Gaussian Splatting and Movement Cataloguing</div>
+                            <div class="text-xs text-gray-500 dark:text-gray-400 pt-2">Sebastian Rings</div>
+                        </div>
+                    </li>
+                    <li class="flex gap-3 text-left border border-slate-300 dark:border-slate-700/70 rounded-md p-3 hover:border-sky-500/60 dark:hover:border-sky-400/60 transition-colors">
+                        <span class="font-mono text-xs text-sky-500 dark:text-sky-400 pt-0.5 select-none shrink-0">P2</span>
+                        <div>
+                            <div class="text-sm font-bold">Towards Efficient XR Visualization of Porous Materials via 3D Gaussian Splatting</div>
+                            <div class="text-xs text-gray-500 dark:text-gray-400 pt-2">Youngseo Yu, Ke Li, and Frank Steinicke</div>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
@@ -323,13 +335,13 @@
                         <span class="font-semibold">Captured-reality demo + coffee break</span> — bring radiance-field captures and run them on attendees' headsets (30 min)
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Research-pitch lightning talks</span> (20 min)
+                        <span class="font-semibold">Research-pitch lightning talks</span> — <a href="#papers" class="text-sky-600 dark:text-sky-400 hover:underline">2 accepted pitches</a> × 3 min (20 min)
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
                         <span class="font-semibold">Structured pro/contra breakouts</span> (30 min)
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
-                        <span class="font-semibold">Closing panel</span> — "Does higher fidelity always mean better MR/AR?" (35 min)
+                        <span class="font-semibold">Panel Discussion</span> — "Does higher fidelity always mean better MR/AR?" with <a href="#panelists" class="text-sky-600 dark:text-sky-400 hover:underline">K. Dickhaut, S. Mori, V. Interrante, T. Kurata</a> (35 min)
                     </li>
                     <li class="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors colors rounded-md px-1">
                         <span class="font-semibold">Wrap-up and next steps</span> (10 min)
@@ -338,6 +350,65 @@
             </div>
         </section>
         
+        <!--
+            Panelists
+        -->
+        <section id="panelists" class="p-4">
+            <h2 class="flex items-center gap-3 font-mono text-lg font-bold uppercase tracking-[0.2em] text-sky-500 dark:text-sky-400">
+                <span class="whitespace-nowrap">Panel Discussion</span>
+                <span class="h-px flex-1 bg-sky-500/30 dark:bg-sky-400/30"></span>
+            </h2>
+            <div class="font-normal text-sm pt-3 pb-4 text-slate-500 dark:text-slate-400 italic">
+                "Does higher fidelity always mean better MR/AR?"
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-2 font-normal">
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover" src="kirsten_dickhaut.jpg" alt="Kirsten Dickhaut portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg font-bold">Kirsten Dickhaut</div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">University of Stuttgart, Germany</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover" src="shohei_mori.jpg" alt="Shohei Mori portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg font-bold">Shohei Mori</div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">University of Stuttgart, Germany</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover" src="Interrante_Victoria.jpg.webp" alt="Victoria Interrante portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg font-bold">Victoria Interrante</div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">University of Minnesota, USA</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="flex flex-col group">
+                    <div class="relative flex flex-col items-center">
+                        <img class="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover" src="kurata.png" alt="Takeshi Kurata portrait">
+                        <div class="relative pt-2 px-2">
+                            <figcaption class="text-center">
+                                <div class="text-base sm:text-lg font-bold">Takeshi Kurata</div>
+                                <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 pt-1">AIST, Japan</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
         <!--
             Organizers
         -->
