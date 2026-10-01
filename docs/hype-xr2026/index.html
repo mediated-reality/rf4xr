@@ -297,15 +297,26 @@
                 <div class="text-sm">
                     <div class="text-lg font-bold text-sky-600 dark:text-sky-400">Prof. Kirsten Dickhaut</div>
                     <div class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 pb-3 pt-0.5">University of Stuttgart, Germany</div>
-                    <p class="pb-2">
-                        <span class="font-semibold">Tentative talk:</span> <span class="italic">Hyperrealism from the perspective of historical artifacts and literature</span>
-                    </p>
                     <p>
                         Prof. Dickhaut will open the workshop with a cross-disciplinary perspective on how realism is perceived and contextualized,
                         framing Hype-XR's central question of perception-level realism in XR.
                     </p>
                 </div>
             </div>
+            <h3 class="text-base font-semibold italic text-left pt-4 pb-2">
+                Hyperrealism from the Perspective of Historical Artifacts and Literature:
+                From Media Illusion to Fictional Coherence and Hermeneutics
+            </h3>
+            <p class="text-sm">
+                <span class="font-mono text-xs font-bold uppercase tracking-widest text-sky-500 dark:text-sky-400 mr-1">Abstract</span>
+                Why do mediated representations elicit real emotions and even bodily responses although we know that what we see, hear, or read is not real?
+                Starting from historical examples of optical illusion, projected demons, theatre, and early film, the keynote first explores how media have long produced fear, surprise, and action without necessarily being mistaken for reality.
+                Second, it connects these phenomena to theories of fiction and asks whether coherence, rather than visual fidelity, is crucial for experiential realism:
+                fictional worlds can affect us without resembling physical reality, while coherence establishes expectations whose disruption may trigger particularly strong responses.
+                Third, these observations are transferred to VR and a hermeneutic model of perception and interpretation.
+                Hyperrealism thus emerges less as a matter of perfect resemblance than as a dynamic interplay between perception, coherence, disruption, and interpretative revision.
+                Historical artifacts and literature thereby offer a conceptual framework for understanding why mediated worlds can make us feel – and act – as if something were real.
+            </p>
         </section>
 
         <!--
@@ -347,7 +358,7 @@
                                 <div>
                                     <div class="prog-who font-semibold"><a href="#keynote" class="hover:text-sky-500 dark:hover:text-sky-400 transition-colors">Prof. Kirsten Dickhaut</a></div>
                                     <div class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">University of Stuttgart, Germany</div>
-                                    <div class="prog-desc italic">Hyperrealism from the perspective of historical artifacts and literature</div>
+                                    <div class="prog-desc italic">Hyperrealism from the Perspective of Historical Artifacts and Literature: From Media Illusion to Fictional Coherence and Hermeneutics</div>
                                 </div>
                             </div>
                         </div>
@@ -679,7 +690,8 @@
         const REPEL_RADIUS = 130;
         const REPEL_FORCE = 0.55;
         const MAX_SPEED = 1.4;
-        const DAMPING = 0.97;
+        const DAMPING = 0.92;
+        const RETURN_FORCE = 0.003;
 
         let W, H, particles;
         const mouse = { x: -9999, y: -9999 };
@@ -690,11 +702,13 @@
         }
 
         function mkParticle() {
+            const x = Math.random() * W;
+            const y = Math.random() * H;
             return {
-                x: Math.random() * W,
-                y: Math.random() * H,
-                vx: (Math.random() - 0.5) * 0.5,
-                vy: (Math.random() - 0.5) * 0.5,
+                x, y,
+                hx: x, hy: y,
+                vx: 0,
+                vy: 0,
                 r: Math.random() * 1.8 + 0.4,
                 base: Math.random() * 0.25 + 0.08,
             };
@@ -721,6 +735,10 @@
                     p.vy += (dy / dist) * f;
                 }
 
+                // spring back toward the original position
+                p.vx += (p.hx - p.x) * RETURN_FORCE;
+                p.vy += (p.hy - p.y) * RETURN_FORCE;
+
                 const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
                 if (speed > MAX_SPEED) {
                     p.vx = (p.vx / speed) * MAX_SPEED;
@@ -731,11 +749,6 @@
                 p.vy *= DAMPING;
                 p.x += p.vx;
                 p.y += p.vy;
-
-                if (p.x < 0) p.x = W;
-                else if (p.x > W) p.x = 0;
-                if (p.y < 0) p.y = H;
-                else if (p.y > H) p.y = 0;
 
                 const color = isDark
                     ? `rgba(255,255,255,${p.base})`
@@ -751,10 +764,12 @@
         }
 
         window.addEventListener('resize', () => {
+            const oldW = W, oldH = H;
             resize();
+            const sx = W / oldW, sy = H / oldH;
             for (const p of particles) {
-                p.x = Math.min(p.x, W);
-                p.y = Math.min(p.y, H);
+                p.x *= sx; p.y *= sy;
+                p.hx *= sx; p.hy *= sy;
             }
         });
 
